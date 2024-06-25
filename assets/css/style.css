@@ -1,0 +1,244 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbarScroll {
+    background-color: #fff; /* Light background */
+    color: #4b4c4d; /* Dark text color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: all 0.3s; /* Smooth transition for any changes */
+    padding: 10px 20px; /* Adequate padding for better spacing */
+}
+
+.navbarScroll:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white on hover */
+    color: #333; /* Darker text color on hover */
+}
+
+.navbarScroll .navbar-nav .nav-link {
+    color: #4b4c4d; /* Dark text color for navbar links */
+    transition: color 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.navbarScroll .navbar-nav .nav-link:hover {
+    color: #333; /* Darker text color on hover */
+}
+
+.navbar-nav .nav-link .fas,
+.navbar-nav .nav-link .fab {
+    color: #4b4c4d; /* Dark grey color for icons */
+    transition: color 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.navbar-nav .nav-link:hover .fas,
+.navbar-nav .nav-link:hover .fab {
+    color: #333; /* Darker color on hover */
+}
+
+@media (max-width: 768px) {
+    .navbarScroll {
+        padding: 5px 10px; /* Reduced padding on smaller screens */
+    }
+
+    .navbar-nav {
+        text-align: center; /* Center align the navbar items */
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px; /* Add spacing between navbar items */
+    }
+
+    .hero-text {
+        padding: 10px; /* Adjust padding for hero text */
+    }
+
+    .hero_title {
+        font-size: 2em; /* Adjust font size for hero title */
+    }
+
+    .hero_desc {
+        font-size: 1.2em; /* Adjust font size for hero description */
+    }
+
+    #about .container, #services .container, #portfolio .container, #contact .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .card {
+        margin-bottom: 20px; /* Adjust margin for cards */
+    }
+
+    .card-img-top {
+        height: auto; /* Adjust image height for better responsiveness */
+    }
+
+    .social-icons {
+        flex-direction: column; /* Stack social icons vertically */
+        gap: 15px; /* Adjust gap between social icons */
+    }
+
+    .servicesText {
+        margin-bottom: 20px; /* Add margin between cards on mobile */
+    }
+
+    .card {
+        margin-bottom: 20px; /* Adjust margin for cards */
+    }
+
+    .card-img-top {
+        height: auto; /* Adjust image height for better responsiveness */
+    }
+}
+
+.navbar-toggler {
+    border-color: #4b4c4d; /* Changes the border color of the toggler */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%234b4c4d' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* SVG for the toggler icon with #4b4c4d color */
+    background-color: transparent; /* Ensure the background is transparent */
+    color: #4b4c4d;
+}
+
+
+.bgimage {
+    /* background: url('assets/img/i4.jpg') no-repeat center center; */
+    background-image: url('assets/img/background.jpg');
+    background-size: cover;
+    height: 160vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-text {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.hero_title {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero_desc {
+    font-size: 1.5em;
+}
+
+#about img.imageAboutPage {
+    width: 100%;
+    height: auto;
+}
+
+#about .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#about h1.text-center {
+    color: #4b4c4d; /* Dark grey color */
+    font-weight: bold; /* Bold font */
+}
+
+#services {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#services h1.text-center {
+    color: #4b4c4d; /* Dark grey color */
+    font-weight: bold; /* Bold font */
+}
+
+#portfolio h1.text-center {
+    color: #4b4c4d; /* Dark grey color */
+    font-weight: bold; /* Bold font */
+}
+
+.card.servicesText {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures content inside the card is spaced evenly */
+    height: 100%; /* Makes sure all cards have the same height */
+}
+
+.row {
+    margin: 0 -15px; /* Adjusts the margin to ensure alignment at the edges */
+}
+
+.row .col-lg-4 {
+    padding: 0 15px; /* Adds padding to maintain spacing between columns */
+    display: flex;
+    align-items: stretch; /* Stretches the cards to take full height */
+}
+
+.card {
+    margin-bottom: 30px; /* Adds bottom margin for spacing between rows */
+}
+
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: black;
+}
+
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+    color: #686868;
+}
+.fab {
+    color: #000000;
+}
+/* footer styling */
+#footer {
+    background-color: #f0f0f0; /* Light background */
+    color: #4b4c4d; /* Dark text color */
+    padding: 30px 0; /* Increased padding for better spacing */
+    text-align: center; /* Center align the text */
+}
+
+.social-icons {
+    display: flex; /* Align icons in a row */
+    justify-content: center; /* Center icons horizontally */
+    gap: 30px; /* Increased gap between icons */
+}
+
+.social-icons a {
+    color: #4b4c4d; /* Dark text color for footer links */
+    font-size: 28px; /* Increased font size for better visibility */
+    transition: color 0.3s, transform 0.3s; /* Added transform to transition for effect */
+}
+
+.social-icons a:hover {
+    color: #1e90ff; /* Updated hover color to a different shade of blue */
+    transform: scale(1.1); /* Scale up icon on hover */
+}
+
+#about, #services, #portfolio, #contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+#contact {
+    padding-bottom: 4rem;
+}
+
+.navbar-brand {
+    color: #4b4c4d; /* Dark grey color */
+    font-weight: bold; /* Bold font */
+}
+
+.card-img-top {
+    width: 100%; /* Ensures the image takes the full width of the card */
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; /* Covers the area of the container without stretching the image */
+}
