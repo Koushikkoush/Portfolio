@@ -1,3 +1,4 @@
+/* Global Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -37,6 +38,7 @@ body {
     color: #333; /* Darker color on hover */
 }
 
+/* Media Query for Mobile View */
 @media (max-width: 768px) {
     .navbarScroll {
         padding: 5px 10px; /* Reduced padding on smaller screens */
@@ -52,19 +54,23 @@ body {
 
     .hero-text {
         padding: 10px; /* Adjust padding for hero text */
+        text-align: center; /* Center-align hero text */
     }
 
     .hero_title {
         font-size: 2em; /* Adjust font size for hero title */
+        text-align: center; /* Ensure title is centered */
     }
 
     .hero_desc {
         font-size: 1.2em; /* Adjust font size for hero description */
+        text-align: center; /* Ensure description is centered */
     }
 
     #about .container, #services .container, #portfolio .container, #contact .container {
         padding-left: 15px;
         padding-right: 15px;
+        text-align: center; /* Ensure sections have centered text */
     }
 
     .card {
@@ -78,18 +84,19 @@ body {
     .social-icons {
         flex-direction: column; /* Stack social icons vertically */
         gap: 15px; /* Adjust gap between social icons */
+        text-align: center; /* Center social icons */
     }
 
     .servicesText {
         margin-bottom: 20px; /* Add margin between cards on mobile */
     }
 
-    .card {
-        margin-bottom: 20px; /* Adjust margin for cards */
+    .row {
+        justify-content: center; /* Center content in rows */
     }
 
-    .card-img-top {
-        height: auto; /* Adjust image height for better responsiveness */
+    #footer {
+        text-align: center; /* Center align footer text */
     }
 }
 
@@ -103,9 +110,7 @@ body {
     color: #4b4c4d;
 }
 
-
 .bgimage {
-    /* background: url('assets/img/i4.jpg') no-repeat center center; */
     background-image: url('assets/img/background.jpg');
     background-size: cover;
     height: 160vh;
@@ -183,23 +188,23 @@ body {
     margin-bottom: 30px; /* Adds bottom margin for spacing between rows */
 }
 
-/* display background color black on navbar scroll */
 .navbarScroll.navbarDark {
     background-color: black;
 }
 
-/* social media icons styling */
 .social-icons {
     font-size: 36px;
     cursor: pointer;
 }
-.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+
+.fa-facebook:hover, .fa-instagram:hover, .fa-twitter:hover, .fa-linkedin:hover, .fa-twitch:hover {
     color: #686868;
 }
+
 .fab {
     color: #000000;
 }
-/* footer styling */
+
 #footer {
     background-color: #f0f0f0; /* Light background */
     color: #4b4c4d; /* Dark text color */
@@ -228,6 +233,7 @@ body {
     margin-top: 4rem;
     padding-top: 4rem;
 }
+
 #contact {
     padding-bottom: 4rem;
 }
